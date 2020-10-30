@@ -1,2 +1,0 @@
-# IE-Project
-Social Network
