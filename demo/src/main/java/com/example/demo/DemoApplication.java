@@ -10,8 +10,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EnableJpaAuditing
-@EnableJpaRepositories
-@EnableAspectJAutoProxy
 public class DemoApplication {
 
 	public static void main(String[] args) {
