@@ -1,0 +1,71 @@
+.holder{
+    width: 80%;
+    height:700px;
+    margin: 10px auto;
+    box-shadow: 0 0 3px 1px #ccc;
+    border-radius: 30px;
+    background: #d8f7ff;
+}
+
+main{
+    height:100%;
+}
+main>form>label{
+    color:#1f75c0;
+    display: block;
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+
+main>form>label.pp{
+    background: antiquewhite;
+    width: 45%;
+    height:500px;
+    width: 45%;
+    float: left;
+    margin-right: 50px;
+}
+
+input{
+    border: 1.2px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+}
+input#photo{
+    display: none;
+}
+
+input#name{
+    width: 45%;
+    height:35px;
+    ont-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+#describtion{
+    width: 45%;
+    height: 300px;
+    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: 1.2px solid #ccc;
+    border-radius: 8px;
+}
+#category{
+    width: 45%;
+    height:35px;
+    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: 1.2px solid #ccc;
+    border-radius: 8px;
+    display: block;
+}
+#but{
+    width: 120px;
+    height: 45px;
+    background: #1f75c0;
+    color:#d8f7ff;
+    display: block;
+    margin: 40px auto;
+    font-size: 22px;
+}

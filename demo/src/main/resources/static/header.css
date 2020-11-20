@@ -1,0 +1,10 @@
+header{
+    margin: 10px 0 0 20px;
+}
+header > h1{
+    padding-top: 10px;
+    color:#1f75c0;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    width: 180px;
+}
