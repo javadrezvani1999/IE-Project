@@ -10,20 +10,16 @@ import java.util.Date;
 //@Table(name="like")
 public class Like {
 
-    /*
-    public Like() {
-    }
-
+/*
     @Column(name="like_date")
     private Date like_date;
+    public Date getLike_date() { return like_date; }
+    public void setLike_date(Date like_date) { this.like_date = like_date; }
 
-    public Date getLike_date() {
-        return like_date;
-    }
+    // Create Field post_id --> ForeignKey as Post Table
 
-    public void setLike_date(Date like_date) {
-        this.like_date = like_date;
-    }
-    */
+    // Create Field user_name --> ForeignKey as users Table
+
+*/
 
 }
