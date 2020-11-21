@@ -5,17 +5,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/Home")
-
-
+@RequestMapping({"/Home","/","","/home"})
 public class MyController {
 
-
-    @RequestMapping("/hello")
-
+    @RequestMapping({"/hello","/Hello"})
     public String Hello(){
         return "addpost";
-
     }
 
 }
