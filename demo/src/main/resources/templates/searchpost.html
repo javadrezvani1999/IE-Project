@@ -3,8 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>Search</title>
+    <link rel="stylesheet" href="../static/body.css">
+    <link rel="stylesheet" href="../static/header.css">
+    <link rel="stylesheet" href="../static/searchpost.css">
+
 </head>
 <body>
+<div class="holder">
+    <header>
+        <h1>Search Post</h1>
+        <div class="menu">
+            <ul class="menu">
+                <li><a href="#">my page</a></li>
+                <li><a href="#">search user</a></li>
+                <li class="select"><a href="#">search post</a></li>
+                <li><a href="#">all post</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
 
+        <div class="head">
+
+            <form action="" method="">
+                <label for="category">Choose Category:</label>
+                <select name="category" id="category">
+                    <option value="sport">All</option>
+                    <option value="sport">sport</option>
+                    <option value="music">music</option>
+                    <option value="movie">movie</option>
+                    <option value="food">food</option>
+                </select>
+
+                <label for="sort">Sort by:</label>
+                <select name="category" id="sort">
+                    <option value="sport">nothing...</option>
+                    <option value="sport">Most comment</option>
+                    <option value="music">Most like</option>
+                    <option value="movie">Last like</option>
+                    <option value="food">Last comment</option>
+                </select>
+
+                <input type="submit" value="Search" class="but">
+
+            </form>
+
+        </div>
+
+        <div class="holderpost">
+
+            <div class="item">
+                <h4>username</h4>
+                <h1>name post</h1>
+                <img src="#"/>
+                <div class="lc">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="des">
+                    <p>this is describtion of post ...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
 </body>
 </html>

@@ -8,3 +8,41 @@ header > h1{
     padding-bottom: 5px;
     width: 180px;
 }
+div.menu{
+    height:100px;
+    width: 92%;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: -15px;
+}
+div.menu > ul.menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+//border: 1px solid yellow;
+    display: inline-block;
+    background: white;
+    box-shadow: 1px 1px 3px #ccc;
+    height:70%;
+    border-radius: 15px;
+}
+div.menu > ul.menu > li{
+    float: right;
+    background: #d8f7ff;
+    box-shadow: 1px 1px 3px #ccc;
+    padding: 8px 5px;
+    border-radius: 8px;
+    margin-right: 5px;
+    margin-left:  5px;
+    margin-top: 15px;
+}
+div.menu > ul.menu > li:hover{
+    background: #9ecaff;
+}
+div.menu > ul.menu > li > a{
+    text-decoration: none;
+    color: #1f75c0;
+}
+div.menu > ul.menu > li.select{
+    background: #9ecaff;
+    color: #1f75c0;
+}
