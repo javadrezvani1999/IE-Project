@@ -13,4 +13,10 @@ public class MyController {
         return "addpost";
     }
 
+
+    @RequestMapping({"/Log","/log"})
+    public String Log(){
+        return "Loginpage";
+    }
+
 }
