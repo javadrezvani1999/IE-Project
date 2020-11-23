@@ -1,0 +1,123 @@
+
+.holder{
+   height:100%;
+    overflow: hidden;
+}
+
+ul.head{
+    width: 90%;
+    //height: 300px;
+    //border: 1px solid red;
+    margin: 20px;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+ul.head > li{
+    float: left;
+    padding: 20px;
+    font-size: 20px;
+
+    line-height: 25px;
+}
+ul.head > li:nth-child(1){
+    display: block;
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+ul.head > li:nth-child(1) > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+ul.head > li.but{
+    background: #1f75c0;
+    color:white;
+    //width: 40px;
+    //height: 10px;
+    display: block;
+    border-radius: 10px;
+    border:1px solid #ccc;
+    line-height: 10px;
+}
+ul.head > li.but > a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+
+
+main > div.holderpost{
+//border: 1px solid #FFd;
+//width: 90%;
+//height: 40px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+main > div.holderpost > div.item{
+    width: 30%;
+    border:1px solid transparent;
+    background: white;
+    box-shadow: 1px 1px 1px #ccc;
+    border-radius: 20px;
+    float: left;
+    margin:5px;
+}
+
+main > div.holderpost > div.item>h4 {
+    color:#000;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    width: 180px;
+    margin-left: 10px;
+}
+main > div.holderpost > div.item>h1{
+    margin: -10px auto;
+    font-weight: normal;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 10px;
+}
+main > div.holderpost > div.item>img{
+    display: inline-block;
+    width: 90%;
+    height: 180px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+main > div.holderpost > div.item>div.lc{
+    width: 70px;
+    height:30px;
+    border:1px solid #ccc;
+    margin: 0 auto;
+    border-radius: 30px;
+    background: #9ecaff;
+    position: relative;
+    top:-35px;
+    left:-8px;
+}
+main > div.holderpost > div.item>div.lc>span{
+
+}
+
+main > div.holderpost > div.item>div.des{
+    width: 90%;
+    height: 110px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    padding-top: 0px;
+    box-shadow: 0 0 2px #ccc;
+    position: relative;
+    top:-20px;
+    margin-left: 10px;
+
+}
