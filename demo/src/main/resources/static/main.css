@@ -1,8 +1,12 @@
 
 
+body{
+    direction: unset;
+}
 .holder{
     height:100%;
     overflow: hidden;
+
 }
 
 header > a>div.AddPostButtom{
@@ -57,6 +61,13 @@ main > div.holderpost > div.item>h1{
     display: inline-block;
     margin-left: 10px;
 }
+
+header > h1 {
+    text-align: center;
+
+
+
+}
 main > div.holderpost > div.item>img{
     display: inline-block;
     width: 90%;
@@ -91,7 +102,16 @@ main > div.holderpost > div.item>div.des{
     position: relative;
     top:-20px;
     margin-left: 10px;
-
 }
 
+.des > .kla{
+    border: 1px solid #4e0f0f;
+    height: 40%;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+p , h4 {
+    text-align: end;
+}
 
