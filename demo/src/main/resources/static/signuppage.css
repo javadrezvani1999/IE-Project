@@ -1,0 +1,68 @@
+body {
+    font-family: Georgia, Times, serif;
+    color: purple;
+    background-color: #4ac2cd;
+}
+
+h1 {
+    font-family: Helvetica, Arial;
+}
+
+
+#box {
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+    height: 600px;
+}
+
+#box>#asli {
+
+    margin: auto;
+    height: 99%;
+    width: 30%;
+    border-radius: 15px;
+    box-shadow:#4e0f0f;
+    background-color:#9df7ff;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+input[type=text],
+input[type=password] {
+    text-align: center;
+    border-radius: 5px;
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.9;
+    border-radius: 17px;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+
+.login {
+    display: block;
+    float: none;
+
+}
