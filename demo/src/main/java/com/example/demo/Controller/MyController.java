@@ -8,22 +8,35 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping({"/Home","/","","/home"})
 public class MyController {
 
-    @RequestMapping({"/hello","/Hello"})
-    public String Hello(){
+
+    @RequestMapping({ "" ,"/","/main","/Main", "main.html"})
+    public String Main(){
+        return "main";
+    }
+
+
+    @RequestMapping({"/add","/Add", "addpoost.html"})
+    public String Add(){
         return "addpost";
     }
 
-    @RequestMapping({"/Log","/log"})
+    @RequestMapping({"/Log","/log", "Loginpage.html"})
     public String Log(){
         return "Loginpage";
     }
 
-    @RequestMapping({"/Edit","/edit"})
-    public String Edit(){return "main";}
+    @RequestMapping({"profile.html"})
+    public String profile(){return "profile";}
 
-    @RequestMapping({"/Search","/search"})
+    @RequestMapping({"editprofile.html"})
+    public String Edit(){return "editprofile";}
+
+    @RequestMapping("/searchpost.html")
     public String Search(){return "searchpost";}
 
-    @RequestMapping({"/Sign","/sign"})
+    @RequestMapping("/searchuser.html")
+    public String Search_user(){return "searchuser";}
+
+    @RequestMapping({"/Sign","/sign", "signup.html"})
     public String Sign(){return "signup";}
 }
