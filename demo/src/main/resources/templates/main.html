@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="/body.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
+
 </head>
 <body>
 
@@ -68,7 +73,21 @@
                 </div>
                 <div class="des">
                     <p>...توضیحات مربوط به این پست</p>
-                    <div class="kla"> </div>
+                    <div class="kla">
+                        <div class="salam" id="comment">
+                            <i class='fas fa-comment-dots' style='font-size:36px'></i>
+                        </div>
+
+
+                        <div class="salam" id="save"></div>
+
+
+                        <div class="salam" id="like">
+                            <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
             <div class="item">
@@ -102,6 +121,14 @@
         </div>
     </main>
 </div>
+
+<script>
+    function myFunction(x) {
+        x.classList.toggle("fa-thumbs-down");
+    }
+
+
+</script>
 
 
 </body>
