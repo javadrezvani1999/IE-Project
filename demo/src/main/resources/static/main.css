@@ -82,13 +82,14 @@ main > div.holderpost > div.item>img{
 main > div.holderpost > div.item>div.lc{
     width: 70px;
     height:30px;
-    border:1px solid #ccc;
     margin: 0 auto;
     border-radius: 30px;
     background: #9ecaff;
     position: relative;
     top:-35px;
     left:-8px;
+    background-color: #4dd2ca;
+
 }
 main > div.holderpost > div.item>div.lc>span{
 
@@ -104,17 +105,16 @@ main > div.holderpost > div.item>div.des{
     position: relative;
     top:-20px;
     margin-left: 10px;
+    background-color: #4dd2ca;
 }
 
 .des > .kla{
-    border-top: 1px solid #4e0f0f;
     height: 52%;
     margin-top: 19px;
 
 }
 
 .des > .kla > .salam{
-    border: 1px solid #000000;
     width: 32%;
     height: 99%;
     float: left;
@@ -122,16 +122,17 @@ main > div.holderpost > div.item>div.des{
     font-size:25px;
 }
 
-.des > .kla > .salam > comment{
-    background-image: url("");
-}
+
 
 .fa {
     font-size: 70px;
     cursor: pointer;
     user-select: none;
-
 }
+
+
+
+
 
 .fa:hover {
     color: darkblue;
