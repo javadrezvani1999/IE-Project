@@ -37,6 +37,6 @@ public class MyController {
     @RequestMapping("/searchuser.html")
     public String Search_user(){return "searchuser";}
 
-    @RequestMapping({"/Sign","/sign", "signup.html"})
-    public String Sign(){return "signup";}
+    @RequestMapping({"/Signup","/signup", "signup.html"})
+    public String Sign(){return "signuppage";}
 }
