@@ -13,10 +13,14 @@ public class MyController {
         return "addpost";
     }
 
-
     @RequestMapping({"/Log","/log"})
     public String Log(){
         return "Loginpage";
     }
 
+    @RequestMapping({"/Edit","/edit"})
+    public String Edit(){return "main";}
+
+    @RequestMapping({"/Search","/search"})
+    public String Search(){return "searchpost";}
 }
