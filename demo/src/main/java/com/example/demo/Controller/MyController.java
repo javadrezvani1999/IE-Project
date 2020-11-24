@@ -23,4 +23,7 @@ public class MyController {
 
     @RequestMapping({"/Search","/search"})
     public String Search(){return "searchpost";}
+
+    @RequestMapping({"/Sign","/sign"})
+    public String Sign(){return "signup";}
 }
