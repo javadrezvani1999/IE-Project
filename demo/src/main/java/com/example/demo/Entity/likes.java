@@ -52,6 +52,6 @@ public class likes {
     }
 
     public likes(){
-        
+
     }
 }
