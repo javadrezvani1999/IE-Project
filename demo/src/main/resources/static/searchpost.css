@@ -1,16 +1,23 @@
+
 .holder{
     width: 65%;
 }
+
+
+
+
 main > div.head{
     border-bottom: 2px solid #ccc;
     width: 90%;
     height: 40px;
     margin-left: 15px;
     margin-top: 5px;
+
 }
 main > div.head > form > label{
     color:#1f75c0;
     font-size: 20px;
+
 }
 main > div.head > form > #category,
 main > div.head > form > #sort{
@@ -105,4 +112,42 @@ main > div.holderpost > div.item>div.des{
 
 }
 
+.des > .kla{
+    height: 52%;
+    margin-top: 19px;
+
+}
+
+.des > .kla > .salam{
+    width: 32%;
+    height: 99%;
+    float: left;
+    text-align: center;
+    font-size:25px;
+}
+
+
+
+.fa {
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+
+
+.fa:hover {
+    color: darkblue;
+    font-size: 40px;
+    padding: 10px;
+}
+
+p , h4 {
+    text-align: end;
+}
+
+div.menu > ul.menu{
+    float: right;
+}
 

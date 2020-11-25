@@ -9,18 +9,20 @@
     <link rel="stylesheet" href="/body.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/searchpost.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 </head>
 <body>
 <div class="holder">
     <header>
-        <h1>Search Post</h1>
+        <h1>جستجوی پست</h1>
         <div class="menu">
             <ul class="menu">
-                <li><a href="profile.html">my page</a></li>
-                <li><a href="searchuser.html">search user</a></li>
-                <li class="select"><a href="#">search post</a></li>
-                <li><a href="main.html">all post</a></li>
+                <li><a href="profile.html">صفحه من</a></li>
+                <li><a href="searchuser.html">جستجوی کاربر</a></li>
+                <li class="select"><a href="#">جستجوی پست</a></li>
+                <li><a href="main.html">همه پست ها</a></li>
             </ul>
         </div>
     </header>
@@ -29,25 +31,25 @@
         <div class="head">
 
             <form action="" method="">
-                <label for="category">Choose Category:</label>
+                <label for="category">انتخاب دسته بندی:</label>
                 <select name="category" id="category">
-                    <option value="sport">All</option>
-                    <option value="sport">sport</option>
-                    <option value="music">music</option>
-                    <option value="movie">movie</option>
-                    <option value="food">food</option>
+                    <option value="sport">همه دستبه بندی ها</option>
+                    <option value="sport">ورزش</option>
+                    <option value="music">موسیقی</option>
+                    <option value="movie">فیلم و سینما</option>
+                    <option value="food">غذا</option>
                 </select>
 
-                <label for="sort">Sort by:</label>
+                <label for="sort">ترتیب بر اساس :</label>
                 <select name="category" id="sort">
-                    <option value="sport">nothing...</option>
-                    <option value="sport">Most comment</option>
-                    <option value="music">Most like</option>
-                    <option value="movie">Last like</option>
-                    <option value="food">Last comment</option>
+                    <option value="sport">هیچی</option>
+                    <option value="sport">کامنت بیشتر</option>
+                    <option value="music">لایک بیشتر</option>
+                    <option value="movie">لایک کمتر</option>
+                    <option value="food">کامنت کمتر</option>
                 </select>
 
-                <input type="submit" value="Search" class="but">
+                <input type="submit" value="جستجو" class="but">
 
             </form>
 
@@ -56,19 +58,38 @@
         <div class="holderpost">
 
             <div class="item">
-                <h4><a href="profile.html" style="text-decoration: none;color:#000;">username</a></h4>
-                <h1>name post</h1>
+                <h4>کاربر شماره 1</h4>
+                <h1>عنوان پست</h1>
                 <img src="#"/>
                 <div class="lc">
                     <span></span>
                     <span></span>
                 </div>
                 <div class="des">
-                    <p>this is describtion of post ...</p>
+                    <p>...توضیحات مربوط به این پست</p>
+                    <div class="kla">
+                        <div class="salam" id="comment1">
+                            <i class='fas fa-comment-dots' style='font-size:36px'></i>
+                        </div>
+                        <div class="salam" id="save1">
+                            <i style='font-size:24px' class='fas'>&#xf07c;</i>
+                        </div>
+                        <div class="salam">
+                            <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
     </main>
 </div>
+
+<script>
+    function myFunction(x) {
+        x.classList.toggle("fa-thumbs-down");
+    }
+</script>
 </body>
 </html>
