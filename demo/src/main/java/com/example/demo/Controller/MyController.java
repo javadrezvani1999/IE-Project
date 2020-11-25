@@ -20,7 +20,7 @@ public class MyController {
         return "addpost";
     }
 
-    @RequestMapping({"/Log","/log", "Loginpage.html"})
+    @RequestMapping({"/Log","/login", "Loginpage.html"})
     public String Log(){
         return "Loginpage";
     }
@@ -37,6 +37,6 @@ public class MyController {
     @RequestMapping("/searchuser.html")
     public String Search_user(){return "searchuser";}
 
-    @RequestMapping({"/Signup","/signup", "signup.html"})
+    @RequestMapping({"/Signup","/signup", "Signuppage.html"})
     public String Sign(){return "signuppage";}
 }
