@@ -15,7 +15,7 @@ public class MyController {
     }
 
 
-    @RequestMapping({"/add","/Add", "addpoost.html"})
+    @RequestMapping({"/addpost","/add", "addpoost.html"})
     public String Add(){
         return "addpost";
     }
