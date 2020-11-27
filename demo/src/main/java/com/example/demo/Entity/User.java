@@ -28,7 +28,7 @@ public class User {
     public String getPassword() { return password;  }
     public void setPassword(String password) { this.password = password;  }
 
-
+/*
 
     @Column(name="fname")
     private String fname;
@@ -75,5 +75,7 @@ public class User {
 
     public int getFollowing_num() { return following_num;  }
     public void setFollowing_num(int following_num) { this.following_num = following_num;  }
+
+    */
 
 }
