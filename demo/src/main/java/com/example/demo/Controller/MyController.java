@@ -1,35 +1,11 @@
 package com.example.demo.Controller;
 
-import com.example.demo.Repository.IRepositoryUser;
-import com.example.demo.Services.UserService;
-import org.omg.PortableInterceptor.ServerRequestInfo;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping({"/Home","/","","/home"})
 public class MyController {
-
-
-    @Autowired
-    private IRepositoryUser UserRipo;
-
-
-    @Autowired
-    private UserService userService;
-
-
-    @RequestMapping({"/showuser" , "/Showuser"})
-    public String showuser(Model model){
-
-        model.addAttribute("users" , userService.getUser());
-
-        return "loginpage";
-    }
-
 
 
 
