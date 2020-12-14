@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head runat="server">
 
-    <link rel="stylesheet" href="../static/Loginpage.css">
-    <link rel="stylesheet" href="../static/body.css">
-    <link rel="stylesheet" href="/body.css">
-    <link rel="stylesheet" href="StyleSheet.css"/>
-    <link rel="stylesheet" href="Loginpage.css"/>
+    <!--    <link rel="stylesheet" href="../static/Loginpage.css">
+        <link rel="stylesheet" href="../static/body.css">
+        <link rel="stylesheet" href="/body.css">
+        <link rel="stylesheet" href="StyleSheet.css"/>
+        <link rel="stylesheet" href="Loginpage.css"/> -->
 
 
 
@@ -15,8 +16,7 @@
 
 
 <body>
-
-<form id="form1" runat="server">
+<form th:action="@{/Log}"  method="post" id="form1" runat="server" >
 
     <div id="header">
 
@@ -28,12 +28,12 @@
             <h1>ورود کاربر</h1>
             <br />
 
-            <input type="text" placeholder="نام کاربری خود را وارد کنید" required autocomplete="on" />
+            <input type="text" name="username" placeholder="نام کاربری خود را وارد کنید" required autocomplete="on" />
 
             </br>
             </br>
 
-            <input type="password" placeholder="رمز خود را وارد کنید" required autocomplete="on" />
+            <input type="password" name="password" placeholder="رمز خود را وارد کنید" required autocomplete="on" />
 
             </br>
             </br>

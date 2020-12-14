@@ -1,17 +1,20 @@
 package com.example.demo.Entity;
 
 
+import com.example.demo.enums.Roles;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
-@Table
+@Table(name = "ozvha")
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class ozvha {
+public class ozvha implements Serializable {
     @Id
     @GeneratedValue
     private int id;
@@ -19,8 +22,43 @@ public class ozvha {
     public void setId(int id) {this.id = id;}
 
 
+
+    private boolean enabled;
+
+    {
+        enabled = true;
+    }
+
+    @ElementCollection(targetClass = Roles.class)
+    @CollectionTable(name = "authorities" , joinColumns =
+    @JoinColumn(name = "username" , referencedColumnName = "username"))
+
+    /*@Enumerated(EnumType.STRING) */
+
+    private List<Roles> roles;
+
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    public List<Roles> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Roles> roles) {
+        this.roles = roles;
+    }
+
     @OneToMany(mappedBy = "ozvha")
     private List<Posts> posts;
+
+
+
 
     public List<Posts> getPosts() {
         return posts;
@@ -30,6 +68,8 @@ public class ozvha {
         this.posts = posts;
     }
 
+
+    @Column(unique = true)
     private String username;
     public String getUsername() {return username;}
     public void setUsername(String username) {this.username = username;}

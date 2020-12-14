@@ -3,6 +3,21 @@ body {
     color: purple;
     background-color: #4ac2cd;}
 
+body{
+    margin:0;
+    padding: 0;
+    background-color: #4ac2cd;
+
+}
+.holder{
+    width: 80%;
+    height:700px;
+    margin: 10px auto;
+    box-shadow: 0 0 3px 1px #ccc;
+    border-radius: 30px;
+    background: #d8f7ff;
+}
+
 h1 {
     font-family: Helvetica, Arial;
 }
@@ -111,3 +126,4 @@ button {
 button:hover {
     opacity: 1;
 }
+
