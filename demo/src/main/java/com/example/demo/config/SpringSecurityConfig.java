@@ -31,7 +31,7 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers( "/main")
+                .antMatchers( "/Signup" , "/Signup")
                 .permitAll()
                 .anyRequest().authenticated()
                 .and().formLogin()
@@ -41,33 +41,6 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 
     }
 
-
-
-
-
-
-
-
-
-
-    /*
-        @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable()
-                .authorizeRequests()
-                .antMatchers("/", "/index", "/css/**", "/js/**", "/img/**")
-                .permitAll()
-                .antMatchers("/users/**","/categories/**")
-                .hasAuthority("ADMIN")
-                .anyRequest().authenticated()
-                .and().formLogin()
-                .loginPage("/login").usernameParameter("email")
-                .permitAll().and().logout().logoutSuccessUrl("/").permitAll()
-                .and()
-                .exceptionHandling().accessDeniedPage("/403");
-    }
-
-*/
 
 
 }

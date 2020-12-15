@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping({"/Home","/","","/home"})
 public class MyController {
 
-
+    @RequestMapping({"/Signup","/signup", "Signuppage.html"})
+    public String Sign(){return "signuppage";}
 
     @RequestMapping({ "" ,"/","/main","/Main", "main.html"})
     public String Main(){
@@ -37,8 +38,7 @@ public class MyController {
     @RequestMapping("/searchuser.html")
     public String Search_user(){return "searchuser";}
 
-    @RequestMapping({"/Signup","/signup", "Signuppage.html"})
-    public String Sign(){return "signuppage";}
+
 
 
 
