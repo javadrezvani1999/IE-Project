@@ -10,9 +10,14 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface UserRepository extends JpaRepository<ozvha,Long>{
+public interface UserRepository extends JpaRepository<ozvha,Long>,CrudRepository<ozvha,Long> {
 
     ozvha findByEmail(String email);
 
-
+    //ozvha findByConfirmationToken(String confirmationToken);
+    @Query(value =
+            "insert into ozvha (username,email, pasword) VALUES (:username, :email, :password)",nativeQuery = true)
+    void insertUser(@Param("username") String name,
+                    @Param("email") String email,
+                    @Param("password") String password);
 }
