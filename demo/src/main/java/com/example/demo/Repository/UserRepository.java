@@ -14,7 +14,7 @@ public interface UserRepository extends JpaRepository<ozvha,Long> {
 
     //ozvha findByConfirmationToken(String confirmationToken);
     @Query(value =
-            "insert into ozvha (username,email, pasword) VALUES (:username, :email, :password)",nativeQuery = true)
+            "insert into ozvha (username,email, password) VALUES (:username, :email, :password)",nativeQuery = true)
     void insertUser(@Param("username") String name,
                     @Param("email") String email,
                     @Param("password") String password);
