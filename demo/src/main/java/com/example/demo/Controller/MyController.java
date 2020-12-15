@@ -28,13 +28,13 @@ public class MyController {
     @RequestMapping({"profile.html"})
     public String profile(){return "profile";}
 
-    @RequestMapping({"editprofile.html"})
+    @RequestMapping({"editprofile.html" , "edit" , "editprofile"})
     public String Edit(){return "editprofile";}
 
-    @RequestMapping("/searchpost.html")
+    @RequestMapping({"/searchpost.html","searchpost"})
     public String Search(){return "searchpost";}
 
-    @RequestMapping("/searchuser.html")
+    @RequestMapping({"/searchuser.html" , "searchuser"})
     public String Search_user(){return "searchuser";}
 
     @RequestMapping({"/Signup","/signup", "Signuppage.html"})
