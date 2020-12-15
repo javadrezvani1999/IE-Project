@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -16,19 +15,12 @@
         <h1><b>ثبت نام</b></h1>
 
         <br /> <br /> <br />
-        <!--th:object="${ozvha}"-->
-        <form method="post" th:action="@{/user/sign}">
+        <form method="" action="">
         <input type="text" placeholder="لطفا نام ‌کاربری خود را وارد نمایید" name="username" id="username" required>
 
         <br /> <br /> <br />
 
-        <!--th:field="*{email}" -->
-        <input type="email" placeholder="ایمیل خود را وارد نمایید" name="email" id="email"  required>
-
-        <br /> <br />
-
-
-        <input type="password" placeholder="رمز خود را وارد نمایید" name="psw" id="psw"  required>
+        <input type="password" placeholder="رمز خود را وارد نمایید" name="psw" id="psw" required>
 
         <br /> <br />
 
@@ -46,7 +38,7 @@
 
         </form>
         <br /> <br /> <br /> <br />
-        <span class="login"> در صورت داشتن اکانت<a href="Loginpage.html"> اینجا</a> را کلیک کنید</span>
+        <span class="login"> در صورت داشتن اکانت<a href="Loginpage.jtml"> اینجا</a> را کلیک کنید</span>
 
 
 
