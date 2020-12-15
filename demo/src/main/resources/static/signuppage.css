@@ -33,6 +33,7 @@ input[type=password]:focus {
 }
 
 input[type=text],
+input[type=email],
 input[type=password] {
     text-align: center;
     border-radius: 5px;

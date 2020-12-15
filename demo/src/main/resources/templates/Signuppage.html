@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-
-<head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head xmlns:th="http://www.w3.org/1999/xhtml">
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="../static/signuppage.css">
@@ -15,12 +15,18 @@
         <h1><b>ثبت نام</b></h1>
 
         <br /> <br /> <br />
-        <form method="" action="">
+        <form method="post" th:action="@{/user/sign}">
         <input type="text" placeholder="لطفا نام ‌کاربری خود را وارد نمایید" name="username" id="username" required>
 
         <br /> <br /> <br />
 
-        <input type="password" placeholder="رمز خود را وارد نمایید" name="psw" id="psw" required>
+
+        <input type="email" placeholder="ایمیل خود را وارد نمایید" name="email" id="email"  required>
+
+        <br /> <br />
+
+
+        <input type="password" placeholder="رمز خود را وارد نمایید" name="psw" id="psw"  required>
 
         <br /> <br />
 
