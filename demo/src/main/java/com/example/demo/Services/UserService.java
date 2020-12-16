@@ -2,6 +2,7 @@ package com.example.demo.Services;
 
 import com.example.demo.Entity.ozvha;
 import com.example.demo.Repository.UserRepository;
+import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,7 +30,6 @@ public class UserService {
 
         return this.userRepository.findAll();
     }
-
 
 
 

@@ -3,9 +3,12 @@ package com.example.demo.Entity;
 
 import com.example.demo.enums.Roles;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
+import org.springframework.web.multipart.MultipartFile;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -37,6 +40,17 @@ public class ozvha implements Serializable {
 
     private List<Roles> roles;
 
+    @Transient
+    @JsonIgnore
+    private MultipartFile file;
+
+    public MultipartFile getFile() {
+        return file;
+    }
+
+    public void setFile(MultipartFile file) {
+        this.file = file;
+    }
 
     public boolean isEnabled() {
         return enabled;

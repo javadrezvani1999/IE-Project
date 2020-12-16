@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping({"/Home","/","","/home"})
 public class MyController {
 
+
+
     @RequestMapping({"/Signup","/signup", "Signuppage.html"})
     public String Sign(){return "signuppage";}
 

@@ -5,7 +5,10 @@ import com.example.demo.Entity.ozvha;
 import com.example.demo.Repository.UserRepository;
 import com.example.demo.Services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
@@ -14,16 +17,41 @@ import java.util.List;
 public class UserController {
 
     private UserService userService;
+    @Autowired
+    public UserController(UserService UserService){ this.userService = UserService;}
 
-
-    private ozvha ozv;
 
     private  UserRepository userRepository;
-
     @Autowired
     public void setUserRepository(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
+
+
+    @RequestMapping(value = {"/" , ""} , method = RequestMethod.GET)
+
+    public List<ozvha> getusers(){
+        return this.userService.FindAllOzvhas();
+    }
+
+    @RequestMapping(value = {"/" , ""} , method = RequestMethod.POST)
+    public ozvha RegisterUser(@RequestBody ozvha ozvha){
+
+       return userService.RegisterUser(ozvha);
+
+    }
+
+
+
+
+
+
+
+
+    //---------------------------------------------------
+    private ozvha ozv;
+
+
     //@Autowired
     public void setUser(ozvha user) {
         this.ozv = user;
@@ -68,24 +96,11 @@ public class UserController {
     }
 
 
-
-    @Autowired
-    public UserController(UserService UserService){
-        this.userService = UserService;
-    }
-
-    @RequestMapping(value = {"/" , ""} , method = RequestMethod.GET)
-
-    public List<ozvha> getusers(){
-        return this.userService.FindAllOzvhas();
-    }
+    //---------------------------------------------------
 
 
-    @RequestMapping(value = {"/" , ""} , method = RequestMethod.POST)
-    public ozvha RegisterUser(@RequestBody ozvha ozvha){
 
-       return userService.RegisterUser(ozvha);
-    }
+
 
 
 
