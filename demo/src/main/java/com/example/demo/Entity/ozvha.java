@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
+import org.springframework.lang.Nullable;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.*;
@@ -20,12 +21,13 @@ import java.util.List;
 public class ozvha implements Serializable {
     @Id
     @GeneratedValue
+    @Nullable
     private int id;
     public int getId() {return id;}
     public void setId(int id) {this.id = id;}
 
 
-
+    @Nullable
     private boolean enabled;
 
     {
@@ -98,22 +100,22 @@ public class ozvha implements Serializable {
     public String getEmail() { return email;}
     public void setEmail(String email) {this.email = email;}
 
-
+    @Nullable
     private int followingnb;
     public int getFollowingnb() {return followingnb;}
     public void setFollowingnb(int followingnb) {this.followingnb = followingnb;}
 
-
+    @Nullable
     private int followernb;
     public int getFollowernb() {return followernb;}
     public void setFollowernb(int followernb) {this.followernb = followernb;}
 
-
+    @Nullable
     private LocalDateTime createdAT;
     public LocalDateTime getCreatedAT() {return createdAT;}
     public void setCreatedAT(LocalDateTime createdAT) {this.createdAT = createdAT;}
 
-
+    @Nullable
     private LocalDateTime updatedAT;
     public LocalDateTime getUpdatedAT() {return updatedAT;}
     public void setUpdatedAT(LocalDateTime updatedAT) {this.updatedAT = updatedAT;}

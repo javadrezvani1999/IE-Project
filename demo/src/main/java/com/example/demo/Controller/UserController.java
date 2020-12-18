@@ -63,6 +63,7 @@ public class UserController {
     @PostMapping("/sign")
     @RequestMapping({"/sign","sign","Sign"})
     public String sign_submit(@ModelAttribute ozvha ozv){
+        int id = ozv.getId();
         String username = ozv.getUsername();
         String email = ozv.getEmail();
         String password = ozv.getPassword();
@@ -72,7 +73,7 @@ public class UserController {
             return "Signuppage";
         }
         userRepository.save(ozv);
-        userRepository.insertUser(username , email , password);
+        userRepository.insertUser(id , username , email , password , true , 0 , 0);
         return "main";
     }
     //-----------------
